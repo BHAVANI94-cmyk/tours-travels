@@ -1,7 +1,7 @@
 // src/services/api.js
 // All API calls to the backend. Import these in your components instead of calling fetch directly.
 
-const BASE_URL = "http://localhost:5000/api";
+const BASE_URL = import.meta.env.MODE === "development" ? "http://localhost:5000/api" : "/api";
 
 // ─── Helper ───────────────────────────────────────────────
 const getToken = () => {
