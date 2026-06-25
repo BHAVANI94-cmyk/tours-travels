@@ -1,0 +1,253 @@
+export const hotels = [
+  // Ooty
+  {
+    id: 1, placeId: 1, placeName: "Ooty",
+    name: "Savoy Hotel Ooty", style: "Heritage", stars: 5,
+    price: 6500, rating: 4.8, reviews: 1240,
+    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80",
+    amenities: ["Pool", "Spa", "Free WiFi", "Restaurant", "Garden"],
+    description: "Colonial-era heritage hotel set amidst lush gardens.",
+    distance: "0.3 km from center", available: true,
+  },
+  {
+    id: 2, placeId: 1, placeName: "Ooty",
+    name: "Fortune Sullivan Court", style: "Luxury", stars: 4,
+    price: 4200, rating: 4.5, reviews: 890,
+    image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&q=80",
+    amenities: ["Free WiFi", "Restaurant", "Room Service", "Parking"],
+    description: "Modern comfort with breathtaking hill views.",
+    distance: "1.2 km from center", available: true,
+  },
+  {
+    id: 3, placeId: 1, placeName: "Ooty",
+    name: "Ooty Budget Inn", style: "Budget", stars: 2,
+    price: 1200, rating: 4.1, reviews: 430,
+    image: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&q=80",
+    amenities: ["Free WiFi", "Hot Water", "Parking"],
+    description: "Clean and comfortable stay at an affordable price.",
+    distance: "0.8 km from center", available: true,
+  },
+  // Munnar
+  {
+    id: 4, placeId: 4, placeName: "Munnar",
+    name: "Windermere Estate", style: "Heritage", stars: 5,
+    price: 8500, rating: 4.9, reviews: 2100,
+    image: "https://images.unsplash.com/photo-1587381420270-3e1a5b9e6904?w=600&q=80",
+    amenities: ["Pool", "Spa", "Tea Estate Tour", "Restaurant", "Bonfire"],
+    description: "Iconic tea estate bungalow with panoramic mountain views.",
+    distance: "3 km from town", available: true,
+  },
+  {
+    id: 5, placeId: 4, placeName: "Munnar",
+    name: "Blackberry Hills", style: "Resort", stars: 4,
+    price: 5500, rating: 4.6, reviews: 780,
+    image: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&q=80",
+    amenities: ["Pool", "Free WiFi", "Trekking", "Restaurant"],
+    description: "Eco-resort nestled in the misty Western Ghats.",
+    distance: "5 km from town", available: false,
+  },
+  {
+    id: 6, placeId: 4, placeName: "Munnar",
+    name: "Green Leaf Homestay", style: "Budget", stars: 3,
+    price: 1800, rating: 4.3, reviews: 560,
+    image: "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=600&q=80",
+    amenities: ["Free WiFi", "Home Cooked Meals", "Garden"],
+    description: "Cozy homestay run by a local family with authentic meals.",
+    distance: "1.5 km from town", available: true,
+  },
+  // Alleppey
+  {
+    id: 7, placeId: 6, placeName: "Alleppey",
+    name: "Punnamada Lake Resort", style: "Luxury", stars: 5,
+    price: 9200, rating: 4.8, reviews: 1450,
+    image: "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=600&q=80",
+    amenities: ["Pool", "Spa", "Houseboat", "Restaurant", "Kayaking"],
+    description: "Five-star luxury right on the edge of Punnamada Lake.",
+    distance: "On the backwaters", available: true,
+  },
+  {
+    id: 8, placeId: 6, placeName: "Alleppey",
+    name: "Backwater Breeze", style: "Resort", stars: 3,
+    price: 3200, rating: 4.4, reviews: 670,
+    image: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&q=80",
+    amenities: ["Free WiFi", "Canoe Rides", "Restaurant"],
+    description: "Peaceful backwater resort with traditional Kerala cuisine.",
+    distance: "2 km from jetty", available: true,
+  },
+  // Pondicherry
+  {
+    id: 9, placeId: 9, placeName: "Pondicherry",
+    name: "Villa Shanti", style: "Boutique", stars: 4,
+    price: 4800, rating: 4.7, reviews: 920,
+    image: "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=600&q=80",
+    amenities: ["Pool", "Free WiFi", "Rooftop Bar", "Spa"],
+    description: "Charming French colonial villa in the White Town quarter.",
+    distance: "0.5 km from beach", available: true,
+  },
+  {
+    id: 10, placeId: 9, placeName: "Pondicherry",
+    name: "Palais de Mahe", style: "Heritage", stars: 5,
+    price: 7200, rating: 4.9, reviews: 1100,
+    image: "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&q=80",
+    amenities: ["Pool", "Spa", "Free WiFi", "Fine Dining", "Library"],
+    description: "Heritage palace hotel with original French-era architecture.",
+    distance: "0.2 km from beach", available: true,
+  },
+  // Coorg
+  {
+    id: 11, placeId: 8, placeName: "Coorg",
+    name: "Amanvana Spa Resort", style: "Luxury", stars: 5,
+    price: 11000, rating: 4.9, reviews: 1800,
+    image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&q=80",
+    amenities: ["Pool", "Spa", "Yoga", "Restaurant", "Coffee Tour"],
+    description: "Ultra-luxury island resort on the Cauvery river.",
+    distance: "On private island", available: true,
+  },
+  {
+    id: 12, placeId: 8, placeName: "Coorg",
+    name: "Coorg Cliffs Resort", style: "Resort", stars: 4,
+    price: 5200, rating: 4.6, reviews: 980,
+    image: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&q=80",
+    amenities: ["Pool", "Free WiFi", "Trekking", "Restaurant"],
+    description: "Cliff-top resort with coffee plantation walks.",
+    distance: "4 km from Madikeri", available: false,
+  },
+  // Wayanad
+  {
+    id: 13, placeId: 10, placeName: "Wayanad",
+    name: "Vythiri Resort", style: "Resort", stars: 5,
+    price: 7800, rating: 4.8, reviews: 1320,
+    image: "https://images.unsplash.com/photo-1615880484746-a134be9a6ecf?w=600&q=80",
+    amenities: ["Treehouse", "Pool", "Spa", "Wildlife Tour", "Restaurant"],
+    description: "Award-winning eco-resort with iconic treetop villas.",
+    distance: "Inside forest", available: true,
+  },
+  // Rameswaram, Mahabalipuram, Kodaikanal, Yercaud, Madurai, Varkala - generic
+  {
+    id: 14, placeId: 2, placeName: "Kodaikanal",
+    name: "Carlton Hotel", style: "Heritage", stars: 4,
+    price: 4500, rating: 4.6, reviews: 880,
+    image: "https://images.unsplash.com/photo-1586375300773-8384e3e4916f?w=600&q=80",
+    amenities: ["Pool", "Spa", "Free WiFi", "Lake View", "Restaurant"],
+    description: "Iconic lakeside hotel with over 100 years of history.",
+    distance: "On Kodai Lake", available: true,
+  },
+  {
+    id: 15, placeId: 11, placeName: "Madurai",
+    name: "Heritage Madurai", style: "Heritage", stars: 5,
+    price: 6200, rating: 4.7, reviews: 1050,
+    image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=600&q=80",
+    amenities: ["Pool", "Spa", "Free WiFi", "Temple View", "Restaurant"],
+    description: "Colonial-style hotel with stunning Meenakshi Temple views.",
+    distance: "1 km from temple", available: true,
+  },
+];
+
+export const hotelStyles = ["All", "Luxury", "Heritage", "Resort", "Boutique", "Budget"];
+export const hotelBudgets = [
+  { label: "All Budgets", min: 0, max: Infinity },
+  { label: "Under ₹2000", min: 0, max: 2000 },
+  { label: "₹2000 – ₹5000", min: 2000, max: 5000 },
+  { label: "₹5000 – ₹8000", min: 5000, max: 8000 },
+  { label: "Above ₹8000", min: 8000, max: Infinity },
+];
+export const hotelAmenities = ["Pool", "Spa", "Free WiFi", "Restaurant", "Parking", "Trekking"];
+
+
+export const hotelDetails = {
+  1: {
+    photos: [
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+      "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80",
+      "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80",
+      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80",
+    ],
+    features: ["King Bed Rooms", "Garden View", "Heritage Architecture", "In-house Restaurant", "Concierge Service"],
+    policies: ["Check-in: 2:00 PM", "Check-out: 11:00 AM", "Free cancellation up to 48 hrs", "No smoking inside rooms", "Pets not allowed"],
+    contact: "+91 423 244 2500",
+  },
+  2: {
+    photos: ["https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80","https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80","https://images.unsplash.com/photo-1587381420270-3e1a5b9e6904?w=800&q=80"],
+    features: ["Hill View Rooms", "24hr Room Service", "Business Centre", "Laundry Service"],
+    policies: ["Check-in: 1:00 PM", "Check-out: 12:00 PM", "Free cancellation up to 24 hrs", "No smoking"],
+    contact: "+91 423 244 3000",
+  },
+  3: {
+    photos: ["https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80","https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80"],
+    features: ["Clean Rooms", "Hot Water", "Parking", "Budget Friendly"],
+    policies: ["Check-in: 12:00 PM", "Check-out: 10:00 AM", "No cancellation after booking"],
+    contact: "+91 94321 10003",
+  },
+  4: {
+    photos: ["https://images.unsplash.com/photo-1587381420270-3e1a5b9e6904?w=800&q=80","https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80","https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80","https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=800&q=80"],
+    features: ["Tea Estate Views", "Bonfire Evenings", "Tea Tasting", "Mountain Trekking", "Bird Watching"],
+    policies: ["Check-in: 2:00 PM", "Check-out: 11:00 AM", "Free cancellation 72 hrs before", "No loud music after 10 PM"],
+    contact: "+91 485 229 7000",
+  },
+  5: {
+    photos: ["https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80","https://images.unsplash.com/photo-1587381420270-3e1a5b9e6904?w=800&q=80"],
+    features: ["Eco Resort", "Pool", "Trekking Guides", "Nature Walks"],
+    policies: ["Check-in: 2:00 PM", "Check-out: 11:00 AM", "50% refund if cancelled 48hrs before"],
+    contact: "+91 94321 20002",
+  },
+  6: {
+    photos: ["https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&q=80","https://images.unsplash.com/photo-1587381420270-3e1a5b9e6904?w=800&q=80"],
+    features: ["Home Cooked Meals", "Garden Seating", "Local Experience", "Family Run"],
+    policies: ["Check-in: 11:00 AM", "Check-out: 10:00 AM", "No cancellation"],
+    contact: "+91 94321 20003",
+  },
+  7: {
+    photos: ["https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=800&q=80","https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80","https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80","https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80"],
+    features: ["Lake View Rooms", "Kayaking", "Spa", "Houseboat Access", "Swimming Pool", "Fine Dining"],
+    policies: ["Check-in: 3:00 PM", "Check-out: 12:00 PM", "Free cancellation 7 days before", "No parties"],
+    contact: "+91 477 223 3000",
+  },
+  8: {
+    photos: ["https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80","https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=800&q=80"],
+    features: ["Canoe Rides", "Backwater Views", "Kerala Cuisine", "Peaceful"],
+    policies: ["Check-in: 1:00 PM", "Check-out: 11:00 AM", "Free cancellation 48 hrs before"],
+    contact: "+91 477 223 4000",
+  },
+  9: {
+    photos: ["https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&q=80","https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80","https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80"],
+    features: ["French Colonial Style", "Rooftop Bar", "Pool", "Spa", "Yoga Classes", "Beach Access"],
+    policies: ["Check-in: 2:00 PM", "Check-out: 12:00 PM", "Free cancellation 48 hrs before", "No loud music after 11 PM"],
+    contact: "+91 413 222 5000",
+  },
+  10: {
+    photos: ["https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80","https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&q=80"],
+    features: ["Beach View", "Heritage Palace", "Fine Dining", "Spa", "Library"],
+    policies: ["Check-in: 3:00 PM", "Check-out: 12:00 PM", "Free cancellation 7 days before"],
+    contact: "+91 413 222 6000",
+  },
+  11: {
+    photos: ["https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80","https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80","https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80"],
+    features: ["Private Island", "Infinity Pool", "Yoga Deck", "Coffee Tours", "Cauvery River View"],
+    policies: ["Check-in: 3:00 PM", "Check-out: 12:00 PM", "Free cancellation 7 days before", "No children under 12"],
+    contact: "+91 82771 00000",
+  },
+  12: {
+    photos: ["https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80","https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80"],
+    features: ["Cliff Views", "Coffee Plantation Walk", "Pool", "Trekking"],
+    policies: ["Check-in: 2:00 PM", "Check-out: 11:00 AM", "Free cancellation 48 hrs before"],
+    contact: "+91 82771 00001",
+  },
+  13: {
+    photos: ["https://images.unsplash.com/photo-1615880484746-a134be9a6ecf?w=800&q=80","https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80","https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80"],
+    features: ["Treehouse Villas", "Wildlife Safari", "Pool", "Spa", "Nature Walks", "Bird Watching"],
+    policies: ["Check-in: 2:00 PM", "Check-out: 11:00 AM", "Free cancellation 72 hrs before", "No plastic allowed on property"],
+    contact: "+91 94960 00000",
+  },
+  14: {
+    photos: ["https://images.unsplash.com/photo-1586375300773-8384e3e4916f?w=800&q=80","https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80"],
+    features: ["Lake View", "Heritage Property", "Boat Rides", "Cycling"],
+    policies: ["Check-in: 2:00 PM", "Check-out: 11:00 AM", "Free cancellation 48 hrs before"],
+    contact: "+91 4542 240 056",
+  },
+  15: {
+    photos: ["https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80","https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80"],
+    features: ["Temple Views", "Pool", "Spa", "Heritage Architecture", "Rooftop Dining"],
+    policies: ["Check-in: 2:00 PM", "Check-out: 12:00 PM", "Free cancellation 48 hrs before"],
+    contact: "+91 452 238 0000",
+  },
+};

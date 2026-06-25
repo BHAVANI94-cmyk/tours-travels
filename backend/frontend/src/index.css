@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: #f8f7f4;
+    color: #1a1a1a;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer utilities {
+  /* ── Scrollbar ─────────────────────── */
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+  /* ── Line clamp ────────────────────── */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* ── Glass cards ───────────────────── */
+  .glass {
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255,255,255,0.5);
+  }
+  .glass-dark {
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+  /* kept for legacy reel components */
+  .glass-p2 {
+    background: rgba(15,23,42,0.45);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+  }
+
+  /* ── Gradient text ─────────────────── */
+  .text-gradient {
+    background: linear-gradient(135deg,#10b981,#06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .text-gradient-p2 {
+    background: linear-gradient(135deg,#22d3ee,#818cf8,#a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* ── Animations ────────────────────── */
+  .fade-in { animation: fadeIn 0.7s ease both; }
+  .fade-in-delay-1 { animation: fadeIn 0.7s 0.1s ease both; }
+  .fade-in-delay-2 { animation: fadeIn 0.7s 0.2s ease both; }
+  .fade-in-delay-3 { animation: fadeIn 0.7s 0.35s ease both; }
+
+  @keyframes fadeIn {
+    from { opacity:0; transform:translateY(18px); }
+    to   { opacity:1; transform:translateY(0); }
+  }
+
+  .shimmer {
+    background: linear-gradient(90deg,#f0f0f0 25%,#e8e8e8 50%,#f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+  @keyframes shimmer {
+    0%   { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+
+  /* ── Card hover lift ───────────────── */
+  .lift {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 24px 48px rgba(0,0,0,0.13);
+  }
+
+  /* ── Snap scroll (reels) ───────────── */
+  .snap-y  { scroll-snap-type: y mandatory; }
+  .snap-start { scroll-snap-align: start; }
+
+  /* ── Prose (planner output) ────────── */
+  .prose-travel h2 { font-size:1.1rem; font-weight:800; margin-top:1.2rem; margin-bottom:.4rem; color:#065f46; }
+  .prose-travel h3 { font-size:.95rem; font-weight:700; margin-top:1rem; margin-bottom:.3rem; color:#1f2937; }
+  .prose-travel ul { padding-left:1.2rem; margin-bottom:.6rem; }
+  .prose-travel li { margin-bottom:.25rem; font-size:.875rem; color:#374151; line-height:1.6; }
+  .prose-travel p  { font-size:.875rem; color:#4b5563; line-height:1.7; margin-bottom:.6rem; }
+  .prose-travel strong { color:#1f2937; }
+}
