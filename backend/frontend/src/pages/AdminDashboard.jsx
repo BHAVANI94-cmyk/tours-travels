@@ -165,7 +165,7 @@ export default function AdminDashboard() {
             <span className="bg-emerald-500/20 text-emerald-400 text-xs font-black px-3.5 py-1.5 rounded-full border border-emerald-500/30 uppercase tracking-widest">
               Admin Area
             </span>
-            <h1 className="text-3xl md:text-4xl font-extrabold mt-3 tracking-tight">Wander India Control Panel</h1>
+            <h1 className="text-3xl md:text-4xl font-extrabold mt-3 tracking-tight">Travelora Control Panel</h1>
             <p className="text-gray-300 text-sm mt-1">Manage users, approve sellers, track global bookings, and analyze platform performance.</p>
           </div>
           <button onClick={fetchData} className="self-start md:self-auto bg-white/10 hover:bg-white/20 text-white border border-white/20 px-5 py-2.5 rounded-2xl font-bold text-sm transition-all flex items-center gap-2">

@@ -195,7 +195,7 @@ export default function SellerAddForm() {
         <div className="max-w-xl mx-auto">
           <p className="text-xs font-bold uppercase tracking-widest opacity-80 mb-1">Seller Portal</p>
           <h1 className="text-2xl font-extrabold">{config.icon} {config.title}</h1>
-          <p className="text-white/70 text-sm mt-1">This will be reviewed and added to the WanderTamil platform.</p>
+          <p className="text-white/70 text-sm mt-1">This will be reviewed and added to the Travelora platform.</p>
         </div>
       </div>
 

@@ -20,7 +20,7 @@ export default function AddPlace() {
     <div className="min-h-screen bg-[#020617] text-white p-8">
       <div className="max-w-xl mx-auto glass-p2 p-10 rounded-[3rem] border border-white/10 shadow-2xl">
         <h2 className="text-3xl font-black text-gradient-p2 mb-2">Host a Place</h2>
-        <p className="text-slate-400 mb-8 text-sm">Add your destination to the WanderIndia network.</p>
+        <p className="text-slate-400 mb-8 text-sm">Add your destination to the Travelora network.</p>
 
         <form onSubmit={handleSubmit} className="space-y-5">
           <div>

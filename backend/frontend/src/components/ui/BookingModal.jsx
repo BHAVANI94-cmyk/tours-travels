@@ -90,7 +90,7 @@ export default function BookingModal({ item, type = "hotel", onClose, onConfirm,
           key: order.key,
           amount: order.amount,
           currency: order.currency,
-          name: "Wander India",
+          name: "Travelora",
           description: `Booking for ${item.name}`,
           order_id: order.id,
           handler: async (response) => {

@@ -18,7 +18,7 @@ export default function Footer() {
                 </svg>
               </div>
               <span className="font-extrabold text-xl tracking-tight">
-                Wander<span className="text-emerald-400">India</span>
+                Travel<span className="text-emerald-400">ora</span>
               </span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-5">
@@ -89,7 +89,7 @@ export default function Footer() {
             <h3 className="font-black text-xs uppercase tracking-widest text-gray-500 mb-5">Contact Us</h3>
             <ul className="space-y-4 mb-6">
               {[
-                { icon:"M3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z", label:"support@wandertamil.com" },
+                { icon:"M3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z", label:"support@travelora.com" },
                 { icon:"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6 19.79 19.79 0 0 1 1.61 5 2 2 0 0 1 3.6 2.81h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.4a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z", label:"+91 98765 43210" },
                 { icon:"M12 21s-8-7.5-8-12a8 8 0 0 1 16 0c0 4.5-8 12-8 12z M12 9a2.5 2.5 0 1 0 0-4 2.5 2.5 0 0 0 0 4z", label:"Madurai, Tamil Nadu, India" },
               ].map((item, i) => (
@@ -121,7 +121,7 @@ export default function Footer() {
         {/* Divider + bottom bar */}
         <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-gray-600 text-xs">
-            © {year} WanderTamil. All rights reserved. Made with ❤️ in Tamil Nadu.
+            © {year} Travelora. All rights reserved. Made with ❤️ in Tamil Nadu.
           </p>
           <div className="flex flex-wrap gap-5 justify-center">
             {["Privacy Policy","Terms of Service","Refund Policy","Cookie Policy"].map(item => (

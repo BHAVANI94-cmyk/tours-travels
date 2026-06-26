@@ -261,12 +261,12 @@ export default function Home() {
         </section>
 
         {/* ══════════════════════════════════════════════════════════════
-            WHY WANDERTAMIL
+            WHY TRAVELORA
         ══════════════════════════════════════════════════════════════ */}
         <section className="pb-14">
           <div className="text-center mb-10">
             <p className="text-xs font-black text-emerald-600 uppercase tracking-widest mb-1">Everything you need</p>
-            <h2 className="text-3xl font-black text-gray-900">Why WanderIndia?</h2>
+            <h2 className="text-3xl font-black text-gray-900">Why Travelora?</h2>
             <p className="text-gray-400 text-sm mt-2 max-w-md mx-auto">One platform to discover, plan, book, and explore South India like never before.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -308,7 +308,7 @@ export default function Home() {
                   Grow your<br/><span className="text-amber-400">tourism</span><br/>business.
                 </h2>
                 <p className="text-gray-400 text-sm leading-relaxed mb-7 max-w-sm">
-                  Join thousands of hotels, restaurants, and travel guides already listed on WanderTamil. Reach travellers searching for exactly what you offer.
+                  Join thousands of hotels, restaurants, and travel guides already listed on Travelora. Reach travellers searching for exactly what you offer.
                 </p>
                 <div className="flex gap-3 flex-wrap">
                   <button onClick={() => navigate(isLoggedIn && role === "seller" ? "/seller/listings" : "/seller/add/place")}

@@ -154,7 +154,7 @@ export default function Navbar() {
               </svg>
             </div>
             <span className="font-extrabold text-gray-800 text-lg tracking-tight">
-              Wander<span className="text-emerald-500">India</span>
+              Travel<span className="text-emerald-500">ora</span>
             </span>
           </Link>
 
@@ -264,7 +264,7 @@ export default function Navbar() {
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12" strokeLinecap="round"/></svg>
               </button>
 
-              <h2 className="text-2xl font-extrabold text-gray-900 mb-1">{isLogin ? "Welcome back 👋" : "Join WanderTamil 🌿"}</h2>
+              <h2 className="text-2xl font-extrabold text-gray-900 mb-1">{isLogin ? "Welcome back 👋" : "Join Travelora 🌿"}</h2>
               <p className="text-gray-400 text-sm mb-5">{isLogin ? "Sign in to your account." : "Create your free account today."}</p>
 
               {/* Role toggle */}

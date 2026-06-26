@@ -64,7 +64,7 @@ Format clearly with headings and bullet points. Keep it practical, specific, and
       if (!apiKey) throw new Error("VITE_GEMINI_API_KEY not found in .env file");
 
       const response = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent?key=${apiKey}`,
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
