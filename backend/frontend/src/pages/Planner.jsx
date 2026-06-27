@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { plannerAPI } from "../services/api";
+
 
 const transportOptions = [
   { value: "train", label: "Train", icon: "🚂" },
@@ -60,30 +62,9 @@ Please provide:
 Format clearly with headings and bullet points. Keep it practical, specific, and budget-conscious.`;
 
     try {
-      const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
-      if (!apiKey) throw new Error("VITE_GEMINI_API_KEY not found in .env file");
-
-      const response = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`,
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            contents: [{ parts: [{ text: prompt }] }],
-            generationConfig: { maxOutputTokens: 2048, temperature: 0.7 },
-          }),
-        }
-      );
-
-      if (!response.ok) {
-        const errData = await response.json();
-        throw new Error(errData?.error?.message || `HTTP ${response.status}`);
-      }
-
-      const data = await response.json();
-      const text = data?.candidates?.[0]?.content?.parts?.[0]?.text;
-      if (!text) throw new Error("Empty response from Gemini. Please try again.");
-      setPlan(text);
+      const data = await plannerAPI.generate({ message: prompt });
+      if (!data?.reply) throw new Error("Empty response from AI planner. Please try again.");
+      setPlan(data.reply);
     } catch (err) {
       setError(`Error: ${err.message}`);
     } finally {
